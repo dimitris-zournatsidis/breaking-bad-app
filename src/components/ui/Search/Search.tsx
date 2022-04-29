@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
+import './Search.css';
 
 interface SearchProps {
-    getQuery: (query: string) => void;
+  getQuery: (query: string) => void;
 }
 
-export default function Search(props:SearchProps) {
-  const [text, setText] = useState('');  
+export default function Search(props: SearchProps) {
+  const [text, setText] = useState('');
 
   function onChange(q: string) {
     setText(q);
@@ -17,8 +18,7 @@ export default function Search(props:SearchProps) {
       <form>
         <input
           type='text'
-          className='form-control'
-          placeholder='Search characters'
+          placeholder='Search characters...'
           value={text}
           onChange={(e) => onChange(e.target.value)}
           autoFocus

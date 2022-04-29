@@ -1,0 +1,22 @@
+.search {
+  height: 7rem;
+}
+
+input[type='text'] {
+  display: block;
+  padding: 1rem;
+  font-size: 1rem;
+  background-color: rgba(229, 248, 232, 0.9);
+  color: rgba(33, 119, 47, 0.9);
+  border: 0;
+  border-radius: 0.5rem;
+  width: 60%;
+  margin: auto;
+  outline: none;
+  transition: all 200ms ease-in-out;
+}
+
+input[type='text']:focus {
+  background-color: white;
+  transition: all 200ms ease-in-out;
+}

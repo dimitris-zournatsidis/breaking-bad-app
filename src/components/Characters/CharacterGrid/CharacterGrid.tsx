@@ -1,6 +1,6 @@
-import React from 'react';
-import Spinner from '../ui/Spinner';
-import CharacterItem from './CharacterItem';
+import Spinner from '../../ui/Spinner/Spinner';
+import CharacterItem from '../CharacterItem/CharacterItem';
+import './CharacterGrid.css';
 
 interface CharacterGridProps {
   isLoading: boolean;
