@@ -5,6 +5,7 @@ interface PaginationProps {
   itemsPerPage: number;
   totalItems: number;
   paginate: (num: number) => void;
+  currentIndex: number;
 }
 
 export default function Pagination(props: PaginationProps) {
@@ -16,9 +17,9 @@ export default function Pagination(props: PaginationProps) {
 
   return (
     <nav className='pagination-container'>
-      {pageNumbers.map((number) => {
+      {pageNumbers.map((number, index) => {
         return (
-          <li key={number} className='pagination-list'>
+          <li key={number} className={props.currentIndex === index ? 'pagination-list active' : 'pagination-list'}>
             <span
               onClick={() => props.paginate(number)}
               className='pagination-number'

@@ -63,6 +63,7 @@ function App() {
         itemsPerPage={itemsPerPage}
         totalItems={items.length}
         paginate={paginate}
+        currentIndex={currentPage - 1}
       />
     </div>
   );
