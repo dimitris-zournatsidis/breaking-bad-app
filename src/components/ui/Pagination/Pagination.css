@@ -1,0 +1,27 @@
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem auto;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+
+.pagination-list {
+    /* border: 1px solid red; */
+    list-style-type: none;
+    background-color: rgba(229, 248, 232, 0.9);
+    color: rgba(33, 119, 47, 0.9);
+    border-radius: 0.3rem;
+}
+
+.pagination-list, .pagination-number {
+    text-decoration: none !important;
+    /* border: 1px solid red; */
+    padding: 0.5rem;
+    /* background-color: rgba(229, 248, 232, 0.9);
+    color: rgba(33, 119, 47, 0.9); */
+    cursor: pointer;
+
+}
