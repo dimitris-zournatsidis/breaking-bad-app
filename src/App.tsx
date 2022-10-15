@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     async function fetchItems() {
       const result = await axios(URL);
-      // console.log('data!!!', result.data);
+      console.log('data!!!', result.data);
       setItems(result.data);
       setIsLoading(false);
     }
@@ -56,6 +56,7 @@ function App() {
     <div className='container'>
       <Header />
       <Search getQuery={(q) => setSearchTerm(q)} />
+      {/* TODO: Comment in in order the search to work  */}
       {/* <CharacterGrid items={filteredData} isLoading={isLoading} /> */}
       <CharacterGrid items={currentItems} isLoading={isLoading} />
 
